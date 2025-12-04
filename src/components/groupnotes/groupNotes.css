@@ -16,8 +16,7 @@
 
 .group-item {
   display: flex;
-  gap: 25px;
-  justify-content: center;
+  gap: 2vw;
   align-items: center;
   cursor: pointer;
   border-radius: 16px;
@@ -39,6 +38,7 @@
   color: white;
   font-weight: 500;
   font-size: 19px;
+  margin-left: 3vw;
 }
 
 .item-name {
