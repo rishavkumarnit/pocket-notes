@@ -9,8 +9,9 @@ const Navbar = () => {
   const handlePlusClick = () => {
     setCreate(true);
   };
-  const handleSelectedNull = () => {
-    setSelected(null);
+  const handleSelectedNull =async () => {
+    await localStorage.setItem("selected", "");
+    await setSelected(null);
   };
 
   return (

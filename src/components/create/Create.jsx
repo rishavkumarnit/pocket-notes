@@ -14,10 +14,6 @@ const Create = () => {
     if (storedNotes) {
       setNotes(storedNotes);
     }
-    // remove after testing
-    // else {
-    //   setNotes([]);
-    // }
   }, []);
 
   useEffect(() => {

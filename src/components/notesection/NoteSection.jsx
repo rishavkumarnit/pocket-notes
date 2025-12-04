@@ -4,7 +4,8 @@ import { Data } from "../../App";
 import "./noteSection.css";
 
 const NoteSection = () => {
-  const { notes, setNotes, note, setNote, selected, setSelected } = useContext(Data);
+  const { notes, setNotes, note, setNote, selected, setSelected } =
+    useContext(Data);
 
   const [text, setText] = useState("");
 
@@ -12,7 +13,9 @@ const NoteSection = () => {
     const currentNote = notes.find((item) => {
       return selected === item.groupName;
     });
-    setNote(currentNote);
+    if (currentNote) {
+      setNote(currentNote);
+    }
   }, [selected]);
 
   useEffect(() => {
@@ -59,15 +62,19 @@ const NoteSection = () => {
     }
   };
 
-  const handleSlectedNulll = ()=>{
-    setSelected(null);
-  }
+  const handleSlectedNulll = async () => {
+    await localStorage.setItem("selected", "");
+    await setSelected(null);
+    //
+  };
   return (
     <>
       {note && (
         <div className="note-page">
           <div className="note-heading">
-            <span className="back" onClick={handleSlectedNulll} ><img src="./back.png" alt="" /></span>
+            <span className="back" onClick={handleSlectedNulll}>
+              <img src="./back.png" alt="" />
+            </span>
             <span
               className="note-title"
               style={{ backgroundColor: note.color }}
