@@ -1,0 +1,211 @@
+.create-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 230px;
+  right: 400px;
+  z-index: 5;
+  height: 222px;
+  width: 575px;
+  border-radius: 6px;
+  background-color: white;
+  gap: 18px;
+  font-family: "Roboto", sans-serif;
+  padding-top: 30px;
+  letter-spacing: 0.0135em;
+}
+.cng-text {
+  font-weight: 500;
+  padding-left: 45px;
+  font-size: 22px;
+}
+.group-name {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 45px;
+  padding-right: 45px;
+  align-items: center;
+}
+.name-text {
+  font-weight: 500;
+  font-size: 20px;
+}
+.name-input {
+  border-radius: 18px;
+  border: 2px solid #cccccc;
+  padding: 11px;
+  width: 294px;
+  height: 17px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+.name-input::placeholder {
+  font-size: 18px;
+  font-weight: 400;
+  color: #999;
+  padding: 10px;
+}
+.color-stack {
+  margin-top: 1px;
+}
+.choose-text {
+  padding-left: 45px;
+  font-weight: 500;
+  letter-spacing: 0.035;
+  font-size: 20px;
+  /* padding-top: 15px; */
+}
+.create-btn {
+  height: 29px;
+  width: 119px;
+  margin-left: 435px;
+  background-color: #001f8b;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  border-radius: 7px;
+  font-size: 16px;
+  position: relative;
+  margin-top: 14px;
+  cursor: pointer;
+}
+
+.color-1 {
+  position: relative;
+  top: 10px;
+  display: inline-block;
+  height: 31px;
+  margin-left: 35px;
+  width: 31px;
+  border-radius: 50%;
+  background-color: #b38bfa;
+  cursor: pointer;
+}
+
+.color-2 {
+  position: relative;
+  top: 10px;
+  display: inline-block;
+  height: 31px;
+  margin-left: 10px;
+  width: 31px;
+  border-radius: 50%;
+  background-color: #ff79f2;
+  cursor: pointer;
+}
+
+.color-3 {
+  position: relative;
+  top: 10px;
+  display: inline-block;
+  height: 31px;
+  margin-left: 10px;
+  width: 31px;
+  border-radius: 50%;
+  background-color: #43e6fc;
+  cursor: pointer;
+}
+.color-4 {
+  position: relative;
+  top: 10px;
+  display: inline-block;
+  height: 31px;
+  margin-left: 10px;
+  width: 31px;
+  border-radius: 50%;
+  background-color: #f19576;
+  cursor: pointer;
+}
+.color-5 {
+  position: relative;
+  top: 10px;
+  display: inline-block;
+  height: 31px;
+  margin-left: 10px;
+  width: 31px;
+  border-radius: 50%;
+  background-color: #0047ff;
+  cursor: pointer;
+}
+.color-6 {
+  position: relative;
+  top: 10px;
+  display: inline-block;
+  margin-left: 10px;
+  height: 31px;
+  width: 31px;
+  border-radius: 50%;
+  background-color: #6691ff;
+  cursor: pointer;
+}
+.bright {
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 767px) {
+  .create-container {
+    top: 35vh;
+    right: 9vw;
+    height: 27vh;
+    width: 82vw;
+    gap: 7px;
+  }
+  .cng-text {
+    font-size: 17px;
+    padding-left: 7vw;
+  }
+  .group-name {
+    padding-left: 7vw;
+    padding-right: 19px;
+    justify-content: start;
+    margin-top: 5px;
+    gap: 1px;
+  }
+  .name-text {
+    width: 30vw;
+    font-size: 13px;
+  }
+
+  .name-input {
+    width: 33vw;
+    height: 1vh;
+     font-size: 10px;
+  }
+  .name-input::placeholder {
+    font-size: 10px;
+    padding: 2px;
+  }
+
+  .color-stack {
+    margin-top: 0;
+    display: flex;
+    height: 7vh;
+    gap: 6px;
+  }
+  .choose-text {
+    font-size: 13px;
+    padding-left: 7vw;
+    height: 7vh;
+    padding-top: 10px;
+  }
+  .color-1,
+  .color-2,
+  .color-3,
+  .color-4,
+  .color-5,
+  .color-6 {
+    height: 15px;
+    width: 15px;
+    margin-left: 0;
+  }
+  .button-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .create-btn {
+    margin-left: 10px;
+    width: 50vw;
+    margin-top: 4px;
+  }
+}

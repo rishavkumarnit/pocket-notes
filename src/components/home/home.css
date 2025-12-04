@@ -1,0 +1,78 @@
+.main-section {
+  background-color: #dae5f5;
+  height: 100vh;
+  width: 73vw;
+}
+
+.content {
+  padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-bg {
+  width: 580px;
+  height: 280px;
+}
+
+.home-text-1 {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.02em;
+  height: 59px;
+  width: 313px;
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.home-text-2,
+.home-text-3 {
+  font-family: "Roboto", sans-serif;
+  height: 32px;
+  width: 650px;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  line-height: 32px;
+}
+
+.lock {
+  margin-top: 125px;
+  letter-spacing: 0.02em;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+.lock-img img {
+  height: 18px;
+  width: 15px;
+  padding-top: 5px;
+  padding-right: 7px;
+  position: relative;
+  top: 1.5px;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 4;
+}
+
+@media screen and (max-width: 767px) {
+  .dummy-ms {
+    display: none;
+  }
+  .ms-selected{
+    display: block;
+    width: 100vw;
+  }
+  .main-section {
+    width: 100vw;
+  }
+}

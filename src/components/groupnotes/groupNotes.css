@@ -1,0 +1,92 @@
+.group-box {
+  height: 81vh;
+  width: 30vw;
+  position: relative;
+  top: 14px;
+  margin-top: 120px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: clip;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.group-item {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 16px;
+  width: 90%;
+  padding: 14px 20px;
+}
+.selected-group {
+  background: rgba(47, 47, 47, 0.17);
+}
+.item-title {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 54px;
+  width: 54px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  font-weight: 500;
+  font-size: 19px;
+}
+
+.item-name {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  text-align: left;
+  justify-content: start;
+  align-items: center;
+  font-weight: 500;
+  font-size: 20px;
+  height: 48px;
+  width: 198px;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: #e5e5e5;
+  border-radius: 10px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #e5e5e5;
+}
+
+@media screen and (max-width: 767px) {
+  .group-box {
+    width: 100vw;
+    top: 5px;
+    margin-top: 15px;
+    height: 87vh;
+  }
+  .group-item {
+    gap: 16px;
+    padding: 10px 12px;
+    padding-left: 50px;
+    width: 95%;
+  }
+  .item-title {
+    font-size: 16px;
+    height: 48px;
+    width: 48px;
+  }
+  .item-name {
+    font-size: 15px;
+  }
+}

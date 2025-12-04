@@ -1,0 +1,8 @@
+
+.app-container{
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  gap: 0;
+  overflow: hidden;
+}

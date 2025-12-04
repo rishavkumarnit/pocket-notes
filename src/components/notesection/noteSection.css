@@ -1,0 +1,203 @@
+.note-heading {
+  display: flex;
+  gap: 29px;
+  justify-content: left;
+  align-items: center;
+  background-color: #001f8b;
+  padding: 11px 25px;
+}
+.note-title {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 54px;
+  width: 54px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+.note-name {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  text-align: left;
+  justify-content: start;
+  align-items: center;
+  font-weight: 500;
+  font-size: 20px;
+  height: 48px;
+  width: 398px;
+  color: white;
+}
+.input-div {
+  position: absolute;
+  bottom: 0;
+  height: 25vh;
+  background-color: #001f8b;
+  width: 70vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+.text-area {
+  width: 65vw;
+  height: 6em;
+  border-radius: 7px;
+  padding-left: 25px;
+  padding-top: 18px;
+  padding-right: 10px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  color: #999;
+}
+.text-area::placeholder {
+  font-size: 20px;
+  font-weight: 400;
+  color: #999;
+  font-family: "Roboto", sans-serif;
+}
+.text-area:focus {
+  outline: none;
+  border: none;
+}
+.blue-button,
+.grey-button {
+  position: absolute;
+  bottom: 34px;
+  right: 48px;
+}
+.blue-button {
+  cursor: pointer;
+}
+.all-note-itmes {
+  width: 70vw;
+  height: 64vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.all-note-itmes::-webkit-scrollbar {
+  width: 8px;
+}
+
+.all-note-itmes::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.63);
+  border-radius: 10px;
+}
+
+.all-note-itmes::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #e5e5e5;
+}
+.content-box {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 10px 10px;
+  margin-left: 42px;
+  margin-top: 20px;
+  width: 62vw;
+  height: 14vh;
+  border-radius: 5px;
+  box-shadow: 0 2px 7px 2px rgb(183, 183, 183);
+  padding-top: 16px;
+  padding-left: 13px;
+  padding-right: 10px;
+  position: relative;
+  padding-bottom: 35px;
+}
+
+.item-text {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.035em;
+  word-break: break-word;
+  line-height: 1.4;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.item-text::-webkit-scrollbar {
+  display: none;
+}
+.item-time {
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #353535;
+  font-size: 14px;
+  bottom: 10px;
+  right: 15px;
+}
+.back {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .back {
+    display: block;
+    cursor: pointer;
+  }
+  .note-page {
+    width: 100vw;
+  }
+  .all-note-itmes {
+    width: 100vw;
+  }
+  .input-div {
+    width: 100vw;
+    height: 20vh;
+  }
+  .note-title {
+    height: 30px;
+    width: 30px;
+    font-size: 15px;
+  }
+  .note-heading {
+    padding: 3px 15px;
+    gap: 9px;
+  }
+  .note-name {
+    width: 60vw;
+    font-size: 15px;
+  }
+  .text-area {
+    font-size: 13px;
+    padding-left: 3vw;
+    padding-top: 2vh;
+    padding-right: 5vw;
+    width: 84vw;
+    height: 7.5em;
+  }
+  .text-area::placeholder {
+    font-size: 15px;
+    font-weight: 400;
+    color: #999;
+    font-family: "Roboto", sans-serif;
+  }
+  .blue-button,
+  .grey-button {
+    position: absolute;
+    bottom: 5vh;
+    right: 8vw;
+    height: 20px;
+  }
+  .all-note-itmes {
+    height: 73vh;
+  }
+  .item-text {
+    font-size: 11px;
+  }
+  .item-time {
+    font-size: 10px;
+  }
+  .content-box {
+    margin-left: 8vw;
+    margin-right: 5vw;
+    width: 75vw;
+    height: 18vh;
+  }
+}
