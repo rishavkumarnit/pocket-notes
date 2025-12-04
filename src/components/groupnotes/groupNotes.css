@@ -21,8 +21,8 @@
   align-items: center;
   cursor: pointer;
   border-radius: 16px;
-  width: 90%;
-  padding: 14px 20px;
+  width: 99%;
+  padding: 14px 5px;
 }
 .selected-group {
   background: rgba(47, 47, 47, 0.17);
